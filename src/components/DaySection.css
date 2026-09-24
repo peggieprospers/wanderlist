@@ -1,0 +1,60 @@
+.day-section {
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 1.25rem;
+}
+
+.day-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1rem;
+}
+
+.day-section-header h2 {
+  font-size: 1.1rem;
+  color: #1e293b;
+  margin: 0;
+}
+
+.day-section-date {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.day-section-empty {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: 0;
+}
+
+.btn-add-stop {
+  margin-top: 0.75rem;
+  background: none;
+  border: 1px dashed #cbd5e1;
+  color: #2563eb;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-add-stop:hover {
+  background-color: #eff6ff;
+}
+
+@media (max-width: 480px) {
+  .day-section {
+    padding: 1rem;
+  }
+
+  .day-section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+  }
+}

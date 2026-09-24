@@ -1,0 +1,76 @@
+.stop-card {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 0.9rem 1rem;
+}
+
+.stop-card + .stop-card {
+  margin-top: 0.6rem;
+}
+
+.stop-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.stop-card-time {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.stop-card-category {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  background-color: #e2e8f0;
+  color: #475569;
+}
+
+.category-sightseeing {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.category-food {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.category-transport {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.stop-card-name {
+  font-size: 1rem;
+  color: #1e293b;
+  margin: 0 0 0.25rem 0;
+}
+
+.stop-card-notes {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.stop-card-time-empty {
+  font-style: italic;
+  color: #94a3b8;
+}
+
+.category-other {
+  background-color: #f1f5f9;
+  color: #475569;
+}
+
+@media (max-width: 360px) {
+  .stop-card-top {
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+}
