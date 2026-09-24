@@ -1,6 +1,6 @@
 .stop-card {
-  background-color: #f8fafc;
-  border: 1px solid #e2e8f0;
+  background-color: var(--color-surface-muted);
+  border: 1px solid var(--color-border);
   border-radius: 8px;
   padding: 0.9rem 1rem;
 }
@@ -19,7 +19,12 @@
 .stop-card-time {
   font-size: 0.8rem;
   font-weight: 600;
-  color: #64748b;
+  color: var(--color-muted);
+}
+
+.stop-card-time-empty {
+  font-style: italic;
+  color: var(--color-muted);
 }
 
 .stop-card-category {
@@ -46,26 +51,21 @@
   color: #166534;
 }
 
+.category-other {
+  background-color: #f1f5f9;
+  color: #475569;
+}
+
 .stop-card-name {
   font-size: 1rem;
-  color: #1e293b;
+  color: var(--color-heading);
   margin: 0 0 0.25rem 0;
 }
 
 .stop-card-notes {
   font-size: 0.85rem;
-  color: #64748b;
+  color: var(--color-muted);
   margin: 0;
-}
-
-.stop-card-time-empty {
-  font-style: italic;
-  color: #94a3b8;
-}
-
-.category-other {
-  background-color: #f1f5f9;
-  color: #475569;
 }
 
 @media (max-width: 360px) {
