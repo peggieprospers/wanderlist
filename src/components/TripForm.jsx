@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './TripForm.css';
+import './TripForm.jsx';
 
 function TripForm({ onSubmit, onCancel }) {
   const [name, setName] = useState('');

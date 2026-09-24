@@ -48,7 +48,7 @@ function TripDetail({ trips, onDeleteTrip, onAddDay, onAddStop }) {
         </div>
       </div>
 
-      {trip.days.length === 0 ? (
+            {!trip.days || trip.days.length === 0 ? (
         <p className="empty-message">No days added yet for this trip.</p>
       ) : (
         <div className="days-list">
